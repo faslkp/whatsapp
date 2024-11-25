@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Black.woff2") format("woff2"), url("../fonts/HelveticaNeue-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-BlackItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-HeavyItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-HeavyItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Heavy.woff2") format("woff2"), url("../fonts/HelveticaNeue-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-BoldItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-MediumItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-LightItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-ThinItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Thin.woff2") format("woff2"), url("../fonts/HelveticaNeue-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-UltraLightItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-UltraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-UltraLight.woff2") format("woff2"), url("../fonts/HelveticaNeue-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Italic.woff2") format("woff2"), url("../fonts/HelveticaNeue-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+div.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: #fcf5eb;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header div.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.wrapper div.logo {
+  width: 130px;
+  display: block;
+}
+header div.wrapper div.logo img {
+  display: block;
+  width: 100%;
+}
+header div.wrapper nav ul {
+  display: flex;
+  align-items: center;
+}
+header div.wrapper nav ul li {
+  margin-right: 35px;
+}
+header div.wrapper nav ul li a {
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+}
+header div.wrapper div.right {
+  display: flex;
+  align-items: center;
+}
+header div.wrapper div.right a {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  padding: 18px 30px;
+  border: 1px solid #000;
+  border-radius: 32px;
+  background-color: #fff;
+}
+header div.wrapper div.right a:last-child {
+  background-color: #25d366;
+  margin-right: 0;
+}
+header div.wrapper div.right a:hover {
+  cursor: pointer;
+}
+header div.wrapper div.right a span.text {
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+  margin-right: 10px;
+}
+header div.wrapper div.right a span.img {
+  width: 15px;
+  display: block;
+}
+header div.wrapper div.right a span.img svg {
+  width: 100%;
+  display: block;
+}
+
+#home {
+  background-color: #fcf5eb;
+  padding: 105px 0 25px;
+}
+#home div.wrapper div.container {
+  background-image: url("../images/home-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 32px;
+  margin-bottom: 15px;
+}
+#home div.wrapper div.container div.left {
+  width: 320px;
+}
+#home div.wrapper div.container div.left div.top {
+  margin-bottom: 80px;
+}
+#home div.wrapper div.container div.left div.top h2 {
+  font-size: 80px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  color: #fff;
+}
+#home div.wrapper div.container div.left div.top p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+}
+#home div.wrapper div.container div.left div.bottom {
+  display: flex;
+  align-items: center;
+}
+#home div.wrapper div.container div.left div.bottom a {
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+  border: 1px solid #000;
+  border-radius: 32px;
+  background-color: #fff;
+}
+#home div.wrapper div.container div.left div.bottom a:first-child {
+  background-color: #25d366;
+  margin-right: 25px;
+}
+#home div.wrapper div.container div.left div.bottom a:hover {
+  cursor: pointer;
+}
+#home div.wrapper div.container div.left div.bottom a span.text {
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+  margin-right: 10px;
+}
+#home div.wrapper div.container div.left div.bottom a span.img {
+  width: 15px;
+  display: block;
+}
+#home div.wrapper div.container div.left div.bottom a span.img svg {
+  width: 100%;
+  display: block;
+}
+#home div.wrapper div.container div.right {
+  width: 420px;
+}
+#home div.wrapper div.container div.right img {
+  width: 100%;
+  display: block;
+}
+#home div.wrapper div.container div.right img:nth-child(2) {
+  margin-top: -20px;
+}
+#home div.wrapper div.container div.right img:nth-child(3) {
+  margin-top: -30px;
+}
+#home div.wrapper div.container div.right img:nth-child(4) {
+  margin-bottom: 8px;
+}
+#home div.wrapper div.container div.right img:nth-child(6) {
+  margin-top: -20px;
+}
+#home div.wrapper p {
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+  color: #7e7d7d;
+  text-align: right;
+}
+
+#desc {
+  background: #fcf5eb;
+  padding: 25px 0;
+}
+#desc div.wrapper img {
+  width: 100%;
+  display: block;
+}
+#desc div.wrapper p {
+  font-size: 56px;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  font-family: "Helvetica Neue";
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+}/*# sourceMappingURL=style.css.map */

@@ -281,7 +281,7 @@ header div.wrapper div.right a span.img svg {
 #home div.wrapper div.container div.right img:nth-child(6) {
   margin-top: -20px;
 }
-#home div.wrapper p {
+#home div.wrapper p.note {
   font-size: 12px;
   font-family: "Helvetica Neue";
   color: #7e7d7d;

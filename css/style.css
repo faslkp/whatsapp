@@ -113,6 +113,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Helvetica Neue";
 }
 
 ul, ol {
@@ -129,6 +130,14 @@ div.wrapper {
   margin: 0 auto;
 }
 
+@keyframes enlarge {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 header {
   height: 80px;
   background-color: #fcf5eb;
@@ -137,6 +146,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 header div.wrapper {
   display: flex;
@@ -157,10 +167,25 @@ header div.wrapper nav ul {
 }
 header div.wrapper nav ul li {
   margin-right: 35px;
+  position: relative;
 }
 header div.wrapper nav ul li a {
   font-size: 16px;
   font-family: "Helvetica Neue";
+}
+header div.wrapper nav ul li::after {
+  content: "";
+  background: #25d366;
+  height: 3px;
+  position: absolute;
+  bottom: -5.5px;
+  left: 0;
+  width: 100%;
+  animation: enlarge 0.5s 1;
+  display: none;
+}
+header div.wrapper nav ul li:hover::after {
+  display: block;
 }
 header div.wrapper div.right {
   display: flex;
@@ -305,4 +330,215 @@ header div.wrapper div.right a span.img svg {
   max-width: 70%;
   margin: 0 auto;
   padding: 60px 0;
+}
+
+#features {
+  background: #fcf5eb;
+  padding: 25px 0;
+}
+#features div.item div.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 0;
+}
+#features div.item div.wrapper div.item-desc {
+  width: 35%;
+}
+#features div.item div.wrapper div.item-desc h3 {
+  font-size: 60px;
+  line-height: 66px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#features div.item div.wrapper div.item-desc p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  margin-bottom: 35px;
+}
+#features div.item div.wrapper div.item-desc a {
+  font-family: "Helvetica Neue";
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  position: relative;
+}
+#features div.item div.wrapper div.item-desc a:hover {
+  color: #25d366;
+}
+#features div.item div.wrapper div.item-desc a span.text {
+  margin-right: 10px;
+}
+#features div.item div.wrapper div.item-desc a span.text::after {
+  content: "";
+  background: #25d366;
+  height: 2px;
+  position: absolute;
+  bottom: -5.5px;
+  left: 0;
+  width: 90px;
+}
+#features div.item div.wrapper div.item-img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+#features div.item:nth-child(even) div.wrapper {
+  flex-direction: row-reverse;
+}
+#features div.item:nth-child(2) {
+  background: #111B21;
+}
+#features div.item:nth-child(2) div.wrapper div.item-desc h3 {
+  color: #fff;
+}
+#features div.item:nth-child(2) div.wrapper div.item-desc h3 span {
+  color: #25d366;
+}
+#features div.item:nth-child(2) div.wrapper div.item-desc p {
+  color: #fff;
+}
+#features div.item:nth-child(2) div.wrapper div.item-desc a {
+  color: #fff;
+}
+#features div.item:nth-child(3) div.wrapper div.item-img img.main, #features div.item:nth-child(4) div.wrapper div.item-img img.main {
+  position: relative;
+}
+#features div.item:nth-child(3) div.wrapper div.item-img img.sub, #features div.item:nth-child(4) div.wrapper div.item-img img.sub {
+  position: absolute;
+  margin-top: 80px;
+  height: 78%;
+}
+#features div.item:nth-child(4) div.wrapper div.item-img img.sub {
+  margin-top: 140px;
+  padding-top: 50px;
+  width: 25%;
+  height: 50%;
+}
+
+footer {
+  background: #111b21;
+  padding: 80px 0 35px;
+}
+footer div.wrapper {
+  width: 83%;
+}
+footer div.wrapper div.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+footer div.wrapper div.top div.logo {
+  display: block;
+  width: 20%;
+}
+footer div.wrapper div.top div.logo div.logo-container {
+  display: block;
+  width: 160px;
+  margin-bottom: 100px;
+}
+footer div.wrapper div.top div.logo div.logo-container img {
+  width: 100%;
+  display: block;
+}
+footer div.wrapper div.top div.logo a {
+  display: flex;
+  align-items: center;
+  padding: 16px 28px;
+  width: 160px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 32px;
+  background-color: #25d366;
+}
+footer div.wrapper div.top div.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+footer div.wrapper div.top div.links div.column {
+  width: 25%;
+}
+footer div.wrapper div.top div.links div.column h6 {
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+footer div.wrapper div.top div.links div.column ul li {
+  margin-bottom: 20px;
+}
+footer div.wrapper div.top div.links div.column ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+footer div.wrapper div.bottom {
+  border-top: 0.2px solid #616060;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.wrapper div.bottom div.left {
+  display: flex;
+  align-items: center;
+}
+footer div.wrapper div.bottom div.left div.copy {
+  margin-right: 40px;
+}
+footer div.wrapper div.bottom div.left div.copy p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 100px;
+}
+footer div.wrapper div.bottom div.left div.terms {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+footer div.wrapper div.bottom div.left div.terms a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 20px;
+  max-width: 90px;
+  display: block;
+}
+footer div.wrapper div.bottom div.left div.social ul {
+  display: flex;
+  align-items: center;
+}
+footer div.wrapper div.bottom div.left div.social ul li {
+  margin-right: 30px;
+}
+footer div.wrapper div.bottom div.left div.social ul li a {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #1c1e21;
+}
+footer div.wrapper div.bottom div.left div.social ul li a svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer div.wrapper div.bottom div.right div.button {
+  width: 150px;
+  padding: 14px 24px;
+  border: 2px solid #fff;
+  border-radius: 32px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

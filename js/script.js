@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("div.hamburger").click(function(){
+        $("div.hamburger-menu").css("width","100%")
+        console.log("hey")
+    })
+    $("div.close-hamburger-button").click(function(){
+        $("div.hamburger-menu").css("width","0")
+    })
+})

@@ -157,7 +157,7 @@ header div.wrapper {
   align-items: center;
   justify-content: space-between;
 }
-header div.wrapper div.hamberger {
+header div.wrapper div.hamburger {
   display: none;
 }
 header div.wrapper div.logo {
@@ -634,7 +634,7 @@ footer div.wrapper div.top div.links div.column ul li a {
   font-size: 16px;
 }
 footer div.wrapper div.top div.down-social-max1024 {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
